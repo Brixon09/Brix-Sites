@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+body{
+  background-attachment: fixed;
+  background-image: url(img/Background.jpg);
+  background-position: center;
+}
+nav{
+  display: flex;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  
+  justify-content:space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: 'Ubuntu';
+  text-shadow: 1px 1px 1px #645f5f8c,
+  1px 1px 1px #7e74748c,
+  1px 1px 1px #928d8d8c,
+  1px 1px 1px #9990908c,
+  1px 1px 1px #a094948c,
+  1px 1px 1px #a5a0a08c,
+  1px 1px 1px #b8b3b38c,
+  1px 1px 1px #bbb3b38c,
+  1px 1px 1px #968d8d8c,
+  1px 1px 1px #948b8b8c;
+}
+nav .logo span{
+  color: crimson;
+  text-shadow: 1px 1px 1px #a710108c,
+    1px 1px 1px #a513138c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #8113138c,
+    1px 1px 1px #7a14148c;
+}
+
+.image a{
+  text-decoration: none;
+}
+.image a p{
+  color: #f2f2f2;
+}
+
+.GG{
+  margin: 25px;
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+.GG h2{
+  color: #f2f2f2;
+  margin-bottom: 100px;
+  font-style: italic;
+  font-weight: 600;
+
+}
+.GG h2 span{
+  color: crimson;
+  font-weight: 900;
+  font-size: 35px;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #a710108c,
+    1px 2px 1px #a513138c,
+    1px 3px 1px #a10f0f8c,
+    1px 4px 1px #a10f0f8c,
+    1px 5px 1px #a10f0f8c,
+    1px 6px 1px #a10f0f8c,
+    1px 7px 1px #a10f0f8c,
+    1px 8px 1px #a10f0f8c,
+    1px 9px 1px #8113138c,
+    1px 10px 1px #7a14148c;
+}
+.GG h2 p{
+  font-style: italic;
+  margin-top: 0;
+  position:fixed absolute;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-weight: 700;
+  font-size: 1.50em;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191;
+}
+
+.title-kdrama{
+  color: yellow;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 10px;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #a39a158c,
+    1px 2px 1px #a39a158c,
+    1px 3px 1px #afad0f8c,
+    1px 4px 1px #a39a158c,
+    1px 5px 1px #a39a158c,
+    1px 6px 1px #a39a158c,
+    1px 7px 1px #a39a158c,
+    1px 8px 1px #a39a158c,
+    1px 9px 1px #a39a158c,
+    1px 10px 1px #a39a158c;
+}
+.img{
+  height: 400px;
+  border-radius: 5px;
+}
+.image{
+  position: relative;
+}
+.image__img{
+  display: block;
+  width: 100%;
+
+}
+.image__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background: rgba( 0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand' , sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image__overlay:hover{
+  opacity: 1;
+}
+.image__title{
+  font-size: 2em;
+  font-weight: bold;
+  color: crimson;
+}
+.image__description{
+  font-size: 0.99em;
+  margin-top: 0.25em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text-p{
+  margin: 50px 20px;
+  color: #f2f2f2;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #645f5f8c,
+  1px 1px 1px #7e74748c,
+  1px 2px 1px #928d8d8c,
+  1px 3px 1px #9990908c,
+  1px 4px 1px #a094948c,
+  1px 5px 1px #a5a0a08c,
+  1px 6px 1px #b8b3b38c,
+  1px 7px 1px #bbb3b38c,
+  1px 8px 1px #968d8d8c,
+  1px 9px 1px #948b8b8c;
+}
+.text p{
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text-p span{
+  color: crimson;
+  text-shadow: 1px 1px 1px #a710108c,
+  1px 2px 1px #a513138c,
+  1px 3px 1px #a10f0f8c,
+  1px 4px 1px #a10f0f8c,
+  1px 5px 1px #a10f0f8c,
+  1px 6px 1px #a10f0f8c,
+  1px 7px 1px #a10f0f8c,
+  1px 8px 1px #a10f0f8c,
+  1px 9px 1px #8113138c,
+  1px 10px 1px #7a14148c;
+  font-size: 75px;
+}
+.text1 p{
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text2 p{
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img1{
+  height: 400px;
+  padding: 0;  
+  border-radius: 20px;
+}
+.image1{
+  position: relative;
+
+}
+.image1 a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.image__img1{
+  display: block;
+  width: 100%;
+}
+.image__overlay1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background: rgba( 0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand' , sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image__overlay1:hover{
+  opacity: 1;
+}
+.image__title1{
+  font-size: 2em;
+  font-weight: bold;
+  color: yellow;
+}
+.image__description1{
+  font-size: 0.99em;
+  margin-top: 0.25em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

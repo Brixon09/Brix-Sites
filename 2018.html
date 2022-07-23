@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <title>2018</title>
+      <link rel="icon" href="img/logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="style2.css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">Elixon<span>21</span></div>
+      </nav>
+            <audio style="display: none;" autoplay loop  src="audio/Bruno Mars - It Will Rain (Official Music Video).mp3" type="audio/mp3" >
+               Your browser doesn't support MP3 format.
+            </audio>
+            <div class="container">
+                <h1>2018</h1>
+                <div class="image-container">
+                    <div class="image"><img src="img-2018/img-1.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-2.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-3.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-4.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-5.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-6.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-7.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-8.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-9.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-10.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-11.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-12.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-13.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-14.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-15.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-16.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-17.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-18.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-19.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-20.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-21.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-22.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-23.jpg" alt=""></div>
+                    <div class="image"><img src="img-2018/img-24.jpg" alt=""></div>
+                </div>
+                <div class="popup-img">
+                  <span>&times;</span>
+                  <img src="img-2017/img-1.jpg" alt="">
+               </div>
+            </div>
+
+            <script>
+               document.querySelectorAll('.image-container img').forEach(img =>{
+               img.onclick = () =>{
+                  document.querySelector('.popup-img').style.display = 'block';
+                  document.querySelector('.popup-img img').src = img.getAttribute('src');
+               }
+            });
+            document.querySelector('.popup-img span').onclick = () =>{
+               document.querySelector('.popup-img').style.display = 'none';
+            }     
+            </script>   
+    </div>
+    </body>
+    </html>

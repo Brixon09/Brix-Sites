@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-attachment: fixed;
+  background-image: url(img/Background.jpg);
+  background-position: center;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: 'Ubuntu';
+  text-shadow: 1px 1px 1px #645f5f8c,
+  1px 1px 1px #7e74748c,
+  1px 1px 1px #928d8d8c,
+  1px 1px 1px #9990908c,
+  1px 1px 1px #a094948c,
+  1px 1px 1px #a5a0a08c,
+  1px 1px 1px #b8b3b38c,
+  1px 1px 1px #bbb3b38c,
+  1px 1px 1px #968d8d8c,
+  1px 1px 1px #948b8b8c;
+}
+nav .logo span{
+  color: crimson;
+  text-shadow: 1px 1px 1px #a710108c,
+    1px 1px 1px #a513138c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #a10f0f8c,
+    1px 1px 1px #8113138c,
+    1px 1px 1px #7a14148c;
+}
+
+.container{
+  position: relative;
+  min-height: 100vh;
+}
+.container h1{
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding:15px;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191;
+}
+.container .image-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15рx;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+.container .image-container .image{
+  height: 300px;
+  width: 250px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5px 5px;
+}
+.container .image-container .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+  margin: 5px 5px;
+}
+.container .image-container .image img:hover{
+  transform: scale(1.2);
+}
+
+.container .popup-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-img span{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0,0,0,.9);
+}
+.container .popup-img img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 400px;
+}
