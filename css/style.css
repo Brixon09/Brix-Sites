@@ -1,19 +1,21 @@
 /*============ Google fonts ============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*======= CSS variables =======*/
 :root{
   --white-color: #fff;
   --dark-color: #222;
   --body-bg-color: #fff;
-  --section-bg-color: #202834;
+  --section-bg-color: black;
   --navigation-item-hover-color: #3b5378;
 
   --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
 
   --scroll-bar-color: #fff;
-  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-color: rgba(0, 0, 0, 0.678);
   --scroll-thumb-hover-color: #454f6b;
 }
 
@@ -51,7 +53,7 @@ section{
 
 .section{
   color: var(--white-color);
-  background: var(--section-bg-color);
+  background: black;
   padding: 35px 200px;
   transition: 0.3s ease;
 }
@@ -83,20 +85,19 @@ header .nav-bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 200px;
+  padding: 0 100px;
   transition: 0.3s ease;
 }
 
 .nav-close-btn, .nav-menu-btn{
-  display: none;
+  display: none
 }
 
 .nav-bar .logo{
   color: var(--white-color);
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
   text-decoration: none;
   text-shadow: var(--text-shadow);
 }
@@ -106,8 +107,24 @@ header .nav-bar{
   font-size: 1em;
   text-decoration: none;
   text-shadow: var(--text-shadow);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+  font-weight: 500;
+}
+.nav-items a:hover{
+  background: rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(10px);
+  transition: .3s;
+  color: crimson;
+  font-weight: 500;
 }
 
+.navigation .nav-items a span{
+  padding: 7px;
+
+}
 .navigation .nav-items a i{
   display: none;
 }
@@ -115,6 +132,8 @@ header .nav-bar{
 .navigation .nav-items a:not(:last-child){
   margin-right: 45px;
 }
+
+
 
 /*======= Home =======*/
 .home{
@@ -173,7 +192,9 @@ header .nav-bar{
   opacity: 0;
   color: #fff;
 }
-
+.text-content a{
+  text-decoration: none;
+}
 .swiper-slide-active .text-content .title{
   transform: translateY(0);
   opacity: 1;
@@ -217,7 +238,7 @@ header .nav-bar{
   background: var(--white-color);
   color: var(--dark-color);
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 25px;
   display: flex;
   align-items: center;
@@ -233,9 +254,17 @@ header .nav-bar{
   opacity: 1;
   transition: 1s ease;
   transition-delay: 0.3s;
+  background: crimson;
+  color: #fff;
   transition-property: transform, opacity;
 }
-
+.swiper-slide-active .text-content .read-btn:hover{
+  transform: translateX(0);
+  opacity: 1;
+  transition: .5s;
+  background: black;
+  color: #fff;
+}
 .swiper-slide .text-content .read-btn i{
   font-size: 1.6em;
   transition: 0.3s ease;
@@ -258,7 +287,7 @@ header .nav-bar{
 .bg-slider-thumbs{
   z-index: 777;
   position: absolute;
-  bottom: 7em;
+  bottom: 1.5em;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s ease;
@@ -276,7 +305,7 @@ header .nav-bar{
 
 .thumbs-container img{
   width: 50px;
-  height: 35px;
+  height: 40px;
   margin: 0 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -293,15 +322,55 @@ header .nav-bar{
   display: flex;
   flex-direction: column;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   margin-left: 90px;
+
 }
 
 .media-icons a{
-  color: var(--white-color);
   font-size: 1.7em;
-  margin: 10px 0;
+  margin: 0px 0;
 }
+
+.facebook{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.instagram{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.twitter{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+.tiktok{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+.hoyolab{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.telegram{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+.discord{
+  width: 200px;
+  height: 50px;
+  width: 50px;
+}
+
 
 /*======= About section =======*/
 .about h2{
@@ -369,14 +438,20 @@ header .nav-bar{
     font-size: 0.9em;
   }
 
+  
+
   /*======= Navigation menu =======*/
   .nav-menu-btn{
     display: block;
     color: var(--white-color);
-    font-size: 1.5em;
+    font-size: 3em;
     cursor: pointer;
   }
+  .nav-menu-btn:hover{
+    color: crimson;
+    transition: .5s;
 
+  }
   .nav-close-btn{
     display: block;
     color: #fff;
@@ -389,7 +464,7 @@ header .nav-bar{
     transition: 0.3s ease;
   }
   .nav-close-btn:hover{
-    color: #3b5378;
+    color: crimson;
   }
   .navigation{
     z-index: 99999;
@@ -415,12 +490,10 @@ header .nav-bar{
   .navigation .nav-items{
     position: relative;
     background: rgb(29, 27, 27);
-    width: 400px;
-    max-width: 400px;
     display: grid;
     place-content: center;
-    margin: 20px;
-    padding: 40px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
     transform: translateY(-200px);
@@ -429,6 +502,7 @@ header .nav-bar{
 
   .navigation.active .nav-items{
     transform: translateY(0);
+    
   }
 
   .navigation .nav-items a{
@@ -436,10 +510,11 @@ header .nav-bar{
     font-size: 1em;
     margin: 15px 50px;
     transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0);
   }
 
   .navigation .nav-items a:hover{
-    color: var(--navigation-item-hover-color);
+    color: rgb(245, 24, 69);
   }
 
   .navigation .nav-items > a > i{
@@ -462,4 +537,19 @@ header .nav-bar{
     font-size: 0.9em;
   }
 }
-      
+  /*======= copyright =======*/
+.bgcopyright{
+  width: 100%;
+  background: black;
+  margin-top: -20px;
+  position: absolute;
+}
+  .copyright {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    color: white;
+    border-top: 1.5px solid var(--white-color);
+
+    padding: 20px ;
+  }   
